@@ -24,5 +24,18 @@ public class ZooApp {
         greeter.greet();
         greeter.greet("Michal");
         greeter.greet("Hello", "Michal");
+
+        duck.run(12);
+        duck.run(35);
+
+        eagle.run(3);
+        eagle.run(12);
+
+        RunBehavior duckRunBehaviour = new Duck();
+        duckRunBehaviour.run(123);
+
+        RunBehavior eagleRunBehaviour = new Eagle();
+        eagleRunBehaviour.run(32);
+
     }
 }

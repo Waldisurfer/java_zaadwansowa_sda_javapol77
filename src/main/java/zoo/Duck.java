@@ -2,7 +2,7 @@ package zoo;
 
 import org.w3c.dom.ls.LSOutput;
 
-public class Duck implements FlyBehaviour {
+public class Duck implements FlyBehaviour, RunBehavior {
     @Override
 
     public void fly(double height) {
@@ -13,5 +13,14 @@ public class Duck implements FlyBehaviour {
             actualHeight = height;
         }
         System.out.println("Duck flying at " + actualHeight);
+    }
+    @Override
+
+    public String run(double speed) {
+        if (speed > 20) {
+            speed = 20;
+        }
+        System.out.println("Duck running at " + speed);
+        return null;
     }
 }
