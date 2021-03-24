@@ -1,6 +1,10 @@
 package zoo;
 
 public class Eagle extends Animal implements  FlyBehaviour, RunBehavior{
+    @Override
+    public String toString() {
+        return "Eagle";
+    }
 
     @Override
     public void fly(double height) {

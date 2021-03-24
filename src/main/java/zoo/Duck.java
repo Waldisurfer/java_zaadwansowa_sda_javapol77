@@ -23,4 +23,9 @@ public class Duck implements FlyBehaviour, RunBehavior {
         System.out.println("Duck running at " + speed);
         return null;
     }
+
+    @Override
+    public String toString() {
+        return "Duck";
+    }
 }

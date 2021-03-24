@@ -31,11 +31,41 @@ public class ZooApp {
         eagle.run(3);
         eagle.run(12);
 
+
+        System.out.println("xxxxxx");
+        Ground ground = new Ground();
+
+
+
         RunBehavior duckRunBehaviour = new Duck();
         duckRunBehaviour.run(123);
+        System.out.println("xxxxxxxx");
+
+
 
         RunBehavior eagleRunBehaviour = new Eagle();
         eagleRunBehaviour.run(32);
+
+        ground.runOnGround(eagle,234);
+        ground.runOnGround(duck,233);
+
+        RunBehavior dogRunBehaviour = new Dog();
+        ground.runOnGround(dogRunBehaviour, 234);
+        Dog dog2 = new Dog();
+
+        RunBehavior gepard = new RunBehavior() {
+            @Override
+            public String run(double speed) {
+                if (speed < 300) {
+                    speed = 300;
+                }
+                System.out.println("Gepard runs at speed: " + speed);
+                return null;
+            }
+        };
+        ground.runOnGround(gepard, 4523);
+
+
 
     }
 }

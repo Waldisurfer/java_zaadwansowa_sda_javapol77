@@ -1,6 +1,6 @@
 package zoo;
 
-public abstract class Animal {
+public abstract class Animal implements RunBehavior {
 
     private boolean eatsMeat;
 
