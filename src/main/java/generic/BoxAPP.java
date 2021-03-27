@@ -1,4 +1,4 @@
-package generic;
+package typygeneryczne2703;
 
 public class BoxAPP {
     public static void main(String[] args) {

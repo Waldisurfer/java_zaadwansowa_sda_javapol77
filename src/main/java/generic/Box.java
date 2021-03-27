@@ -1,12 +1,12 @@
-package generic;
+package typygeneryczne2703;
 
 public class Box<T> {
     T item;
 
-    T get() {
+    public T get() {
         return item;
     }
-    void set(T item) {
+    public void set(T item) {
         this.item = item;
     }
 }
